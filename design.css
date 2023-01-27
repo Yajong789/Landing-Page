@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* block navbar */
+.nav{
+    background-color: rgb(216, 179, 11);
+    width: 100%;
+    height: 50px;
+    color: white;
+    position: fixed;
+}
+
+/* aturan teks terang bulan */
+.logo{
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+/* mengatur tata letak navbar */
+.menu{
+    margin-left: 800px;
+    padding-top: 17px;
+}
+
+/* aturan beranda, about, dll */
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+/* menghilangkan garis pada href */
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover{
+    color: lightsteelblue;
+    font-style: italic;
+}
+
+/* mengatur halaman beranda */
+.banner{
+    background-color: lightyellow;
+    height: 550px;
+    text-align: center;
+    color: black;
+}
+
+/* mengatur ukuran foto terang bulan */
+.banner img{
+    border-radius: 100%;
+    height: 150px;
+    border: 6px solid black;
+    margin-top: 100px;
+}
+
+/* mengatur jarak h1 */
+.banner h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* mengatur button */
+.banner button{
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+    background-color: greenyellow;
+}
+
+.banner button:hover{
+    background-color: transparent;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+}
+
+/* animasi h1 */
+p span:before{
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: blueviolet;
+    font-family: 70px;
+}
+
+
+h2 span::before{
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: blueviolet;
+    font-family: 70px;
+}
+
+@keyframes gerak{
+    0% {
+        content: 'Martabak';
+    }
+    50% {
+        content: 'Terang Bulan';
+    }
+    100% {
+        content: 'Dan Lain-Lain';
+    }
+}
+
+/* box dari about */
+.box-about{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 90px;
+    align-content: center;
+    background-color: #f0f0f0;
+}
+
+/* memindahkan box ke tengah */
+.box-mid{
+    width: 300px;
+    height: 320px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 30px 20px 20px 55px;
+    border-radius: 10px;
+    margin-left: 455px; 
+    margin-bottom: 100px; 
+}
+
+.box-tengah:hover, .box-kanan:hover, .box-kiri:hover{
+    background-color: rgb(216, 179, 11);
+    cursor: pointer;
+}
+
+/* mengatur jarak tulisan dengan gambar */
+.box-about h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+
+.box-kiri, .box-tengah, .box-kanan{
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 70px 20px 20px 55px;
+    border-radius: 10px;
+    float: left; 
+}
+
+.box-menu{
+    text-align: center;
+    color: #4d4d4d;
+    margin: 0px auto;
+}
+
+.box-kiri button, .box-tengah button, .box-kanan button{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: green;
+    color: azure;
+}
+.box-kiri button:hover, .box-tengah button:hover, .box-kanan button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: black;
+}
+ 
+.box-kontak img{
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.box-kontak{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 450px;
+    margin-bottom: 50px;
+    padding-top: 600px;
+}
+
+.footer{
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 3px;
+    margin: 50px auto 0px;
+    text-align: center;
+    font-family: none;
+}
+
+
